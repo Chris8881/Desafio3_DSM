@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/accentColor"
+            android:gravity="center"
+            android:text="Calculadora de Propinas para Grupos"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <!-- Monto total -->
+        <TextView
+            android:id="@+id/tvMontoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monto_total" />
+
+        <EditText
+            android:id="@+id/etMonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Ej: 50.00" />
+
+        <!-- Número de personas -->
+        <TextView
+            android:id="@+id/tvPersonasLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/n_mero_de_personas" />
+
+        <EditText
+            android:id="@+id/etPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ej: 3" />
+
+        <!-- Propinas -->
+        <TextView
+            android:id="@+id/tvPropinasLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propinas" />
+
+        <RadioGroup
+            android:id="@+id/rgPropinas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb10"
+                android:text="@string/propina10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rb15"
+                android:text="@string/propina15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rb20"
+                android:text="@string/propina20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rbOtro"
+                android:text="@string/otro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etOtroPorcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa otro porcentaje"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Switch para IVA -->
+        <Switch
+            android:id="@+id/switchIva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluir IVA (16%)" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:backgroundTint="#8E44AD"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#8E44AD"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#333"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

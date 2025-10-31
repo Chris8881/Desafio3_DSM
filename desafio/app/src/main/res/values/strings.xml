@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Desafío1Vero</string>
+    <string name="monto_total">Ingrese el monto total</string>
+    <string name="n_mero_de_personas">Cantidad de personas</string>
+    <string name="propina10">Propina 10%</string>
+    <string name="propina15">Propina 15%</string>
+    <string name="propina20">Propina 20%</string>
+    <string name="otro">Otro porcentaje</string>
+</resources>

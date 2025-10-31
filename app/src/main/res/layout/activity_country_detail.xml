@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_background"
+    android:padding="@dimen/spacing_m">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewFlag"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/desc_bandera_pais"
+            android:background="@color/md_theme_surface"
+            android:padding="@dimen/spacing_s"
+            android:layout_marginBottom="@dimen/spacing_m" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_m"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/radius_m"
+            app:cardBackgroundColor="@color/md_theme_surface"
+            app:cardElevation="@dimen/elevation_m">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_m">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_info_pais"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_theme_primary"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nombre"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewOfficialName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_nombre_oficial"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewCapital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_capital"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_region"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewSubregion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_subregion"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewPopulation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_poblacion"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewCodes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_codigos_iso"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewCurrencies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_monedas"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_idiomas"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <TextView
+                    android:id="@+id/textViewCoordinates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_coordenadas"
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_onSurface" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/radius_m"
+            app:cardBackgroundColor="@color/md_theme_surface"
+            app:cardElevation="@dimen/elevation_m">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_m">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_clima_actual"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_theme_primary"
+                    android:layout_marginBottom="@dimen/spacing_s" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/weatherContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imageViewWeatherIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/desc_icono_clima"
+                        android:layout_marginBottom="@dimen/spacing_s" />
+
+                    <TextView
+                        android:id="@+id/textViewTemperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_temperatura"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_theme_onSurface"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/spacing_s" />
+
+                    <TextView
+                        android:id="@+id/textViewCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_condicion"
+                        android:textSize="16sp"
+                        android:textColor="@color/md_theme_onSurfaceVariant"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/spacing_s" />
+
+                    <TextView
+                        android:id="@+id/textViewWind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_viento"
+                        android:textSize="16sp"
+                        android:textColor="@color/md_theme_onSurfaceVariant"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/spacing_s" />
+
+                    <TextView
+                        android:id="@+id/textViewHumidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_humedad"
+                        android:textSize="16sp"
+                        android:textColor="@color/md_theme_onSurfaceVariant"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

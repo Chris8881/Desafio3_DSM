@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CountriesWeatherApp</string>
+
+    <string name="desc_bandera_pais">Bandera del país</string>
+    <string name="desc_icono_clima">Ícono del clima</string>
+
+    <string name="titulo_info_pais">Información del País</string>
+    <string name="titulo_clima_actual">Clima Actual de la Capital</string>
+
+    <string name="label_nombre">Nombre: </string>
+    <string name="label_nombre_oficial">Nombre Oficial: </string>
+    <string name="label_capital">Capital: </string>
+    <string name="label_region">Región: </string>
+    <string name="label_subregion">Subregión: </string>
+    <string name="label_poblacion">Población: </string>
+    <string name="label_codigos_iso">Códigos ISO: </string>
+    <string name="label_monedas">Monedas: </string>
+    <string name="label_idiomas">Idiomas: </string>
+    <string name="label_coordenadas">Coordenadas: </string>
+
+    <string name="label_temperatura">Temperatura: </string>
+    <string name="label_condicion">Condición: </string>
+    <string name="label_viento">Viento: </string>
+    <string name="label_humedad">Humedad: </string>
+
+    <string name="msg_sin_capital">No se puede obtener clima sin capital</string>
+    <string name="msg_error_clima">Error al cargar clima: %1$s</string>
+    <string name="titulo_regiones">Regiones del Mundo</string>
+
+</resources>
